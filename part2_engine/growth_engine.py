@@ -1,4 +1,7 @@
-def mom_growth(previous: float, current: float) -> float: 
+def mom_growth(previous: float, current: float):
+    if previous == 0:
+        return None
+
     return round((current - previous) / previous * 100, 2)
 
 def is_flagged(mom_pct:float, threshold:float=8.0) -> str:
