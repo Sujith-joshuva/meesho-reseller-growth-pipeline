@@ -182,3 +182,10 @@ Part 4 combines the earlier components into an agentic workflow:
 **Intake → Validate → Compute → Classify → Prioritize → Report Draft → Suppress/Escalate → Human Approval**
 
 The workflow includes an input validation guardrail, an action guardrail that prevents automatic sending, and an output guardrail requiring drafted numbers to trace back to verified Part 1 or Part 2 values.
+
+## Documentation References
+
+The implementation references the official Python standard-library documentation for:
+
+- Python `csv` module: https://docs.python.org/3/library/csv.html
+- Python `json` module: https://docs.python.org/3/library/json.html
