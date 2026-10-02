@@ -108,3 +108,17 @@ The chart should clearly show the 24.92% share. A simple design should be used s
 This is a univariate comparison of revenue across regions. A horizontal bar chart allows the four regional values to be compared directly and clearly.
 
 The x-axis should start at zero to avoid exaggerating differences. A 3D chart should not be used. No legend is required because there is only one series.
+
+---
+
+## Top-Reseller Masked Narrative
+
+The Part 1 `HAVING` query identified five resellers with total spend above INR 50,000.
+
+- **West — ALIAS-19:** INR 75,295.09 in total spend.
+- **West — ALIAS-22:** INR 73,882.33 in total spend.
+- **South — ALIAS-12:** INR 69,936.46 in total spend.
+- **North — ALIAS-06:** INR 64,238.97 in total spend.
+- **North — ALIAS-05:** INR 61,825.02 in total spend.
+
+These references use the reseller's region and coded alias only. Raw reseller names are intentionally excluded from the external-facing narrative.
