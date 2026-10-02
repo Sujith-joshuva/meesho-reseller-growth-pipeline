@@ -15,29 +15,31 @@ The pipeline follows this order:
 ```text
 data/
 ├── generate_dataset.py
-├── resellers.csv
+├── meesho_reseller.db
 ├── orders.csv
-└── meesho_reseller.db
+└── resellers.csv
 
 part1_sql/
 ├── queries.sql
 └── output/
+    ├── june_delivered_aov.csv
     ├── monthly_category_revenue.csv
     ├── region_revenue.csv
     ├── top_resellers.csv
-    ├── zero_order_resellers.csv
-    └── june_delivered_aov.csv
+    └── zero_order_resellers.csv
 
 part2_engine/
 ├── growth_engine.py
 ├── test_growth_engine.py
 └── fixtures/
-    └── corrupted_feed.csv
+    ├── corrupted_feed.csv
+    ├── monthly_category_revenue.csv
+    └── valid_feed.csv
 
 part3_narrative/
-├── prompt_pack.md
-├── narrative_report.md
 ├── masking.py
+├── narrative_report.md
+├── prompt_pack.md
 ├── test_masking.py
 └── top_reseller_narrative.md
 
@@ -45,6 +47,8 @@ part4_agent/
 ├── agent_spec.md
 ├── mock_agent_runner.py
 └── test_mock_agent_runner.py
+
+README.md
 ```
 
 ## Requirements
@@ -136,8 +140,7 @@ Run:
 ```bash
 pytest
 ```
-
-The complete test suite verifies the Python components across Parts 2, 3, and 4.
+The complete test suite verifies the automated Python tests across Parts 2, 3, and 4.
 
 ## Zero API Key Requirement
 
